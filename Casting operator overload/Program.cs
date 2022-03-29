@@ -53,7 +53,6 @@ namespace Casting_operator_overload
             } while (choice != 4);
         }
 
-       
         static void Name( out string name)
         {
         Name:
@@ -83,6 +82,11 @@ namespace Casting_operator_overload
                 Console.Write("Enter Surname:");
                 surname = Console.ReadLine();
                 if (String.IsNullOrEmpty(surname)) throw new NotAvailableExceptions("Soyad daxil etmək məcburidir.");
+                if (Double.TryParse(surname, out double d))
+                {
+                    Console.WriteLine("Numbers not allowed!");
+                    goto Surname;
+                }
             }
             catch (Exception ex)
             {
@@ -95,7 +99,7 @@ namespace Casting_operator_overload
         StudentAge:
             try
             {
-                Console.Write("Yaş:");
+                Console.Write("Age:");
                 age = Convert.ToInt32(Console.ReadLine());
                 if (age < 6 || age > 21)throw new NotAvailableExceptions("your age is not suitable.");
             }
@@ -110,7 +114,7 @@ namespace Casting_operator_overload
         Point:
             try
             {
-                Console.Write("Bal:");
+                Console.Write("Point:");
                 point = Convert.ToInt32(Console.ReadLine());
                 if (point < 0 || point > 100)throw new NotAvailableExceptions("Point must be 0-100interval.");
             }
