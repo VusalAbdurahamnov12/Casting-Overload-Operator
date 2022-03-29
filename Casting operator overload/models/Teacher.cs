@@ -35,5 +35,9 @@ namespace Casting_operator_overload.models.Exception
         {
             return t1.Salary < t2.Salary;
         }
+        public Teacher()
+        {
+
+        }
     }
 }

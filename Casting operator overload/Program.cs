@@ -29,7 +29,7 @@ namespace Casting_operator_overload
                 {
                     case 0:
                         break;
-                    case 1:
+                    case 1://Create studend 
                         Name(out string studentName);
                         Surname(out string studentSurname);
                         StudentAge(out int studentAge);
@@ -38,7 +38,12 @@ namespace Casting_operator_overload
                         Array.Resize(ref studentss, studentss.Length + 1);
                         studentss[studentss.Length - 1] = newstudent;
                         break;
-                    case 2:
+                    case 2://Create Teacher
+                        Name(out string teacherName);
+                        Surname(out string teacherSurname);
+                        TeacherAge(out int teacherAge);
+                        Salary(out double salary);
+                       
                         break;
                     case 3:
                         Console.WriteLine(studentss);
@@ -52,7 +57,38 @@ namespace Casting_operator_overload
                 }
             } while (choice != 4);
         }
-
+        static void Salary(out double salary)
+        {
+        Start:
+            try
+            {
+                Console.Write("Salary:");
+                salary = Convert.ToInt32(Console.ReadLine());
+                if (salary < 0)
+                    throw new NotAvailableExceptions("Salary must be greater than 0.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                goto Start;
+            }
+        }
+        static void TeacherAge(out int age)
+        {
+        TeacherAge:
+            try
+            {
+                Console.Write("Ahe:");
+                age = Convert.ToInt32(Console.ReadLine());
+                if (age < 18)throw new NotAvailableExceptions("your age is not suitable.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                goto TeacherAge;
+            }
+        }
+        #region Student
         static void Name( out string name)
         {
         Name:
@@ -124,5 +160,6 @@ namespace Casting_operator_overload
                 goto Point;
             }
         }
+        
     }
 }
