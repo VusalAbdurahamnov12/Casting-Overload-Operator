@@ -38,6 +38,8 @@ namespace Casting_operator_overload
                         Array.Resize(ref studentss, studentss.Length + 1);
                         studentss[studentss.Length - 1] = newstudent;
                         break;
+                    case 2:
+                        break;
                     case 3:
                         Console.WriteLine(studentss);
                         for (int i = 0; i < studentss.Length; i++)
@@ -50,7 +52,9 @@ namespace Casting_operator_overload
                 }
             } while (choice != 4);
         }
-        static void Name(out string name)
+
+       
+        static void Name( out string name)
         {
         Name:
             try
@@ -58,12 +62,18 @@ namespace Casting_operator_overload
                 Console.Write("Enter Name:");
                 name = Console.ReadLine();
                 if (String.IsNullOrEmpty(name)) throw new NotAvailableExceptions("Ad daxil etmək məcburidir.");
+                if (Double.TryParse(name, out double d)) 
+                {
+                    Console.WriteLine("Numbers not allowed!");
+                    goto Name;
+                }
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
                 goto Name;
             }
+
         }
         static void Surname(out string surname)
         {
