@@ -17,7 +17,7 @@ namespace Casting_operator_overload
             {
             choicePoint:
                 try {
-                    Console.WriteLine("[1]-Create student\n[2]-Create teacher\n[3]-Ifno,0-Exit");
+                    Console.WriteLine("[1]-Create student\n[2]-Create teacher\n[3]-Info Students\n[4]-Info Teacher [0]-Exit");
                     choice = Convert.ToInt32(Console.ReadLine());
                 }catch(Exception ex) 
                 {
@@ -50,6 +50,8 @@ namespace Casting_operator_overload
                         {
                             Console.WriteLine(studentss[i]);
                         }
+                        break;
+                    case 4:
                         foreach (Person item in teacherss)
                             Console.WriteLine(item);
                         break;
