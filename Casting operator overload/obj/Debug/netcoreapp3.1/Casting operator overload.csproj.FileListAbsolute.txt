@@ -1,0 +1,14 @@
+E:\homework\Casting operator overload\Casting operator overload\bin\Debug\netcoreapp3.1\Casting operator overload.exe
+E:\homework\Casting operator overload\Casting operator overload\bin\Debug\netcoreapp3.1\Casting operator overload.deps.json
+E:\homework\Casting operator overload\Casting operator overload\bin\Debug\netcoreapp3.1\Casting operator overload.runtimeconfig.json
+E:\homework\Casting operator overload\Casting operator overload\bin\Debug\netcoreapp3.1\Casting operator overload.runtimeconfig.dev.json
+E:\homework\Casting operator overload\Casting operator overload\bin\Debug\netcoreapp3.1\Casting operator overload.dll
+E:\homework\Casting operator overload\Casting operator overload\bin\Debug\netcoreapp3.1\Casting operator overload.pdb
+E:\homework\Casting operator overload\Casting operator overload\obj\Debug\netcoreapp3.1\Casting operator overload.csproj.AssemblyReference.cache
+E:\homework\Casting operator overload\Casting operator overload\obj\Debug\netcoreapp3.1\Casting operator overload.GeneratedMSBuildEditorConfig.editorconfig
+E:\homework\Casting operator overload\Casting operator overload\obj\Debug\netcoreapp3.1\Casting operator overload.AssemblyInfoInputs.cache
+E:\homework\Casting operator overload\Casting operator overload\obj\Debug\netcoreapp3.1\Casting operator overload.AssemblyInfo.cs
+E:\homework\Casting operator overload\Casting operator overload\obj\Debug\netcoreapp3.1\Casting operator overload.csproj.CoreCompileInputs.cache
+E:\homework\Casting operator overload\Casting operator overload\obj\Debug\netcoreapp3.1\Casting operator overload.dll
+E:\homework\Casting operator overload\Casting operator overload\obj\Debug\netcoreapp3.1\Casting operator overload.pdb
+E:\homework\Casting operator overload\Casting operator overload\obj\Debug\netcoreapp3.1\Casting operator overload.genruntimeconfig.cache
