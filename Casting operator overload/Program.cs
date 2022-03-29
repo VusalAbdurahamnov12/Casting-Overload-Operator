@@ -43,7 +43,6 @@ namespace Casting_operator_overload
                         Surname(out string teacherSurname);
                         TeacherAge(out int teacherAge);
                         Salary(out double salary);
-                       
                         break;
                     case 3:
                         Console.WriteLine(studentss);
@@ -78,7 +77,7 @@ namespace Casting_operator_overload
         TeacherAge:
             try
             {
-                Console.Write("Ahe:");
+                Console.Write("Age:");
                 age = Convert.ToInt32(Console.ReadLine());
                 if (age < 18)throw new NotAvailableExceptions("your age is not suitable.");
             }
@@ -88,7 +87,7 @@ namespace Casting_operator_overload
                 goto TeacherAge;
             }
         }
-        #region Student
+        //Studend 
         static void Name( out string name)
         {
         Name:
